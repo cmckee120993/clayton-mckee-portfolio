@@ -1,0 +1,55 @@
+/* Full Document */
+
+:root {
+    --primary: #4c4c4c;
+    --secondary: #B6B1AF;
+    --text: #F48D3A;
+    --highlight: #DF6400;
+}
+
+/* Header */
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    padding: 25px;
+}
+
+header h1 {
+    color: var(--text);
+    font-family: Copperplate, Monaco, Arial;
+    font-size: 50px;
+}
+
+header h1::after {
+    content: " Fullstack Developer";
+    font-size: 20px;
+    font-family: Monaco, Copperplate, Arial;
+}
+
+/* Nav Bar*/
+
+.nav-bar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    display: block;
+    padding: 5px;
+    width: 33.333333%;
+    font-size: 20px;
+    margin-bottom: 2px;
+    background-color: var(--primary);
+}
+
+.nav-bar li a {
+    color: var(--text);
+}
+
+.nav-bar li:hover, .nav-bar li a:hover {
+    color: var(--secondary);
+    background-color: var(--highlight);
+}
