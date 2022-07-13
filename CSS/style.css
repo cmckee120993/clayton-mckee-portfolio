@@ -1,10 +1,14 @@
 /* Full Document */
 
 :root {
-    --primary: #4c4c4c;
-    --secondary: #B6B1AF;
-    --text: #F48D3A;
+    --primary: #58595B;
+    --secondary: #A7A9AC;
+    --text: #F7941D;
     --highlight: #DF6400;
+}
+
+body{
+    background-color: var(--secondary)
 }
 
 /* Header */
@@ -47,9 +51,37 @@ header h1::after {
 
 .nav-bar li a {
     color: var(--text);
+    font-family: copperplate, Monaco, Arial;
 }
 
 .nav-bar li:hover, .nav-bar li a:hover {
     color: var(--secondary);
     background-color: var(--highlight);
+}
+
+/* Grid and Main Content */
+
+.grid {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+/* Footer */
+
+footer {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 75px;
+    height: 75px;
+}
+
+footer p {
+    color: var(--text);
+    font-family: Monaco, Copperplate, Arial;
+    font-size: 15px;
 }
