@@ -11,10 +11,6 @@ body{
     background-color: var(--secondary)
 }
 
-* {
-    outline: dashed red;
-}
-
 p {
     font-family: arial, helvetica, 'Times New Roman';
     font-size: 16px;
@@ -152,23 +148,53 @@ header h1::after {
 
 .grid {
     display: flex;
-    grid-template-columns: 25% 25% 25%;
+    flex-wrap: wrap;
+    width: 75%;
     background-color: var(--secondary);
 }
 
+.spotlight {
+    flex: 1 1 98%;
+    padding: 1%;
+}
 .project-1 {
-    grid-column-start: 2;
-    width: 100%;
+    flex: 2 1 23%;
+    padding: 1%;
 }
 
 .project-2 {
-    grid-column-start: 3;
-    width: 100%;
+    flex: 2 2 23%;
+    padding: 1%;
 }
 
 .project-3 {
-    grid-column-start 3;
+    flex: 2 3 23%;
+    padding: 1%
+}
+
+.project-1 img, .project-2 img, .project-3 img, .spotlight img {
+    height: 100%;
     width: 100%;
+    position: relative;
+}
+.spotlight ul {
+    position: relative;;
+    display: flex;
+    bottom: 7%;
+ }
+
+.project-1 ul, .project-2 ul, .project-3 ul {
+   position: relative;;
+   display: flex;
+   bottom: 12%;
+}
+
+.project-1 li, .project-2 li, .project-3 li, .spotlight li {
+    background-color: var(--secondary);
+    padding: 5px;
+    border: solid 1px var(--text);
+    width: 100%;
+    text-align: center;
 }
 
 /* Contact */
