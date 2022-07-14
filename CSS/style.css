@@ -75,24 +75,29 @@ header h1::after {
 
 #hero {
    display: flex;
-    height: 250px;
-    background: url(/Images/coding.jpg);
+    max-height: 250px;
+    min-height: 250px;
+    background: url(https://as1.ftcdn.net/v2/jpg/01/23/49/78/1000_F_123497809_XnG4OqaKGnmCmicN2Oimte8qIOHzzzrN.jpg);
     object-fit: cover;
-    background-repeat: no-repeat;
-    justify-content: end;
-    align-items: end;
+    background-repeat: repeat;
 }
 
 #hero figure {
     text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: end;
     margin: 0.5em;
     padding: 0.5em;
 }
 
 #hero img {
-    height: 75%;
-    width: 15%;
+    min-height: 75%;
+    min-width: 15%;
+    max-height: 75%;
+    max-width: 15%;
     border: solid 3px var(--primary);
+    display: flex;
 }
 
 #hero h2 {
@@ -103,6 +108,7 @@ header h1::after {
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 /* About Me */
@@ -111,6 +117,7 @@ header h1::after {
     display: flex;
     align-items: start;
     background-color: var(--primary);
+    border-bottom: solid 3px var(--primary);
 }
 
 .title {
@@ -125,7 +132,6 @@ header h1::after {
     font-size: 25px;
     padding: 10px;
     margin-top: 25px;
-    margin-bottom: 25px;
     text-align: end;
     justify-content: end;
     display: flex;
