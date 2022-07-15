@@ -12,3 +12,6 @@ This site was created in order to showcase my work as a web developer. It will c
 ## Credits
 
 Thanks to Diarmuid Murphy for assistance with coding the hero banner and Matthew Calimbas troubleshooting help. 
+
+## Link to Live Site
+https://cmckee120993.github.io/clayton-mckee-portfolio/
