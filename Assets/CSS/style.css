@@ -78,6 +78,8 @@ header h1::after {
     border: solid 3px var(--primary);
     display: flex;
     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
     flex-shrink: 0;
 }
 
@@ -100,8 +102,7 @@ header h1::after {
 }
 
 .title {
-    min-width: 25%;
-    max-width: 25%;
+    min-width: 30%;
 }
 
 .container h2 {
@@ -151,14 +152,20 @@ header h1::after {
     border: 3px solid var(--primary);
 }
 
-.project-1 img, .project-2 img, .project-3 img, .spotlight img {
+.spotlight img {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.project-1 img, .project-2 img, .project-3 img {
     height: 100%;
     width: 100%;
 }
 .spotlight ul {
     position: relative;;
     display: flex;
-    bottom: 7%;
+    bottom: 5%;
  }
 
 .project-1 ul, .project-2 ul, .project-3 ul {
@@ -218,7 +225,17 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-    .spotlight ul, .project-1 ul, .project-2 ul, .project-3 ul {
+    .spotlight ul{
+        bottom: 10%;
+    }
+     .project-1 ul, .project-2 ul, .project-3 ul {
         bottom: 15%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .title {
+        min-width: 15%;
     }
 }
