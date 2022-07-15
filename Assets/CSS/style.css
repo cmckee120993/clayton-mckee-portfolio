@@ -131,10 +131,10 @@ header h1::after {
     background-color: var(--secondary);
 }
 
-/* .spotlight {
+.spotlight {
     margin: 1%;
     border: solid 3px var(--primary);
-} */
+}
 .project-1 {
     flex: 2 1 23%;
 }
@@ -146,14 +146,19 @@ header h1::after {
 .project-3 {
     flex: 2 3 23%;
 }
-.project-1, .project-2, .project-3,  {
+.project-1, .project-2, .project-3 {
     margin: 1%;
     border: 3px solid var(--primary);
 }
 
+.project-1 img, .project-2 img, .project-3 img, .spotlight img {
+    height: 100%;
+    width: 100%;
+}
 .spotlight ul {
     position: relative;;
     display: flex;
+    bottom: 7%;
  }
 
 .project-1 ul, .project-2 ul, .project-3 ul {
@@ -213,7 +218,7 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-    .project-1 ul, .project-2 ul, .project-3 ul {
+    .spotlight ul, .project-1 ul, .project-2 ul, .project-3 ul {
         bottom: 15%;
     }
 }
