@@ -6,7 +6,7 @@ This site was created in order to showcase my work as a web developer. It will c
 
 ## Image of the Site
 
-<img src="./Assets/Images/site-screenshot.jpg">
+<img src="./Assets/Images/site-screenshot.png">
 
 
 ## Credits
