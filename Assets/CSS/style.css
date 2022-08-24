@@ -64,22 +64,24 @@ header h1::after {
    display: flex;
     max-height: 250px;
     min-height: 250px;
-    background: url(https://as1.ftcdn.net/v2/jpg/01/23/49/78/1000_F_123497809_XnG4OqaKGnmCmicN2Oimte8qIOHzzzrN.jpg);
-    object-fit: cover;
-    background-repeat: repeat;
-    justify-content: end;
+    background-image: url(../Images/coding.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+#hero-div {
+text-align: center;
 }
 
 #hero img {
-    min-height: 75%;
-    min-width: 15%;
-    max-height: 75%;
-    max-width: 200px;
+    height: 200px;
+    width: 200px;
     border: solid 3px var(--primary);
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2px;
+    margin-right: 5px;
+    margin-top: 5px;
     flex-shrink: 0;
 }
 
@@ -89,9 +91,9 @@ header h1::after {
     color: var(--text);
     background-color: var(--primary);
     width: fit-content;
-    display: flex;
-    flex-wrap: wrap;
     padding: 10px;
+
+    margin: auto;
 }
 
 /* Titles on the Left */
@@ -136,6 +138,10 @@ header h1::after {
     margin: 1%;
     flex: 1 1 98%;
     border: solid 3px var(--primary);
+}
+
+.spotlight p {
+text-align: center;
 }
 .project-1 {
     flex: 2 1 23%;
